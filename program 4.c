@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+    
+    float area;
+    printf("Enter the area of the square:");
+    scanf("%f",&area);
+    double side_length=sqrt((double)area);
+    if("The side length is %.2f\n",side_length);
+    return 0;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
