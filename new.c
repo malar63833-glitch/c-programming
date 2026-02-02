@@ -1,15 +1,14 @@
 #include <stdio.h>
 
-int main() {
- 
-    int choice;
+int main() { 
+       int choice;
     printf("language\n");
     printf("1.Tamil \n");
     printf("2.English \n");
     printf("3.Hindi \n");
     printf("4.Kannada \n");
     printf("Enter the choice");
-    scanf("%d",&choice);
+    scanf("%d",&choice);
  
  
  
