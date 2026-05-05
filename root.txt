@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+//structure for the tree
+struct Node{
+    int data;
+    struct Node *left;
+    struct Node *right;
+};
+//creating new node
+struct Node* createNode(int value){
+    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+
+    newNode->data = value;
+    newNode->left = NULL;
+    newNode->right = NULL;
+    return newNode;
+}
+
+int main() {
+//adding data
+    struct Node* root = createNode(10);
+//adding child data for root
+    root->left = createNode(20);
+    root->right = createNode(30);
+//adding child fir first parents
+    root->left->left  = createNode(40);
+    root->left->right = createNode(50);
+ 
+    root->right->left  = createNode(60);
+    root->right->right  = createNode(70);
+ 
+ 
+    printf("Value at root->left->right=%d\n",root->left->right->data);
+    return 0;
+}
+
+
